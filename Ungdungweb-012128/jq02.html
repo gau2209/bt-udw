@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery 02</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>$(document).ready(function()
+    {
+        $("btTinhsongay").click(function()
+        {
+            var t1 =$("#txTungay").val();
+            console.log(t1);
+            var t2 =$("#txDenngay").val();
+            var d1 = new Date(t1);
+            var d2 = new Date(t2);
+            var songay =(d2.getTime() - d1.getTime()) / (24*3600*1000);
+            $("#kq").html("<h3>" + songay + "</h3");
+        })
+    })
+    </script>
+</head>
+
+<body>
+    <p>Từ Ngày: <input type="date" id="tungay"></p>
+    <p>Đến Ngày: <input type="date" id="denngay"></p>
+    <button id="btTinhsongay">Tính số ngày</button>
+    <p id="kq"></p>
+</body>
+</html>

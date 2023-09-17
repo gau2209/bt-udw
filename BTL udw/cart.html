@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="BTLon.css" rel="stylesheet">
+    <link href="cart.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li>
+                    <p>f a s h i o n</p>
+                </li>
+                <li><a href="BTLon.html">Trang chủ</a></li>
+                <li>
+                    <a href="BTLonNam.html" target="_blank">Nam</a>
+                    <ul class="subnav">
+                        <li><a href="">Áo thun</a></li>
+                        <li><a href="">Áo sơ mi</a></li>
+                        <li><a href="">Áo khoác</a></li>
+                        <li><a href="">Quần Jean</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Nữ</a>
+                    <ul class="subnav">
+                        <li><a href="">Áo thun</a></li>
+                        <li><a href="">Áo sơ mi kiểu</a></li>
+                        <li><a href="">Áo khoác</a></li>
+                        <li><a href="">Quần Jean</a></li>
+                        <li><a href="">Đầm váy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Phụ kiện</a>
+                    <ul class="subnav">
+                        <li><a href="">Nam</a></li>
+                        <li><a href="">Nữ</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">More</a>
+                    <ul class="subnav">
+                        <li><a href="">Designed by</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cart.html" class="cart">
+                        <svg id="cart-icon" xmlns="http://www.w3.org/2000/svg"
+                            width="50" height="50"
+                            viewBox="0 0 226 226"
+                            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#ffffff"><path d="M200.61605,66.65234h-141.4504l-4.12229,-23.98999c-1.58624,-9.0599 -8.60204,-16.19935 -17.63286,-17.94361l-11.20333,-2.12934c-1.55456,-0.30699 -3.15439,0.24284 -4.19178,1.44064c-1.03739,1.19779 -1.35315,2.85974 -0.82733,4.35453c0.52582,1.49479 1.81252,2.59305 3.37134,2.87758l11.20333,2.12846c5.41849,1.04679 9.62779,5.33073 10.57918,10.76678l20.23759,117.76277c-8.65878,3.24695 -14.268,11.67076 -13.92478,20.91194c0.34322,9.24117 6.56185,17.22569 15.43762,19.82141c8.87577,2.59572 18.41668,-0.77993 23.68511,-8.37998c5.26843,-7.60005 5.08197,-17.7188 -0.46287,-25.1196h55.43665c-5.94223,7.93789 -5.6749,18.9127 0.64678,26.55186c6.32168,7.63915 17.05273,9.95486 25.96211,5.6025c8.90939,-4.35236 13.6788,-14.24027 11.53885,-23.92226c-2.13995,-9.68199 -10.63242,-16.6387 -20.54622,-16.83069c-0.45042,-0.15133 -0.92234,-0.22884 -1.39749,-0.22953h-87.69153l-4.12715,-24.01559h94.80921c9.24678,-0.02302 17.50627,-5.78792 20.71652,-14.45959l18.09766,-49.26094c0.49794,-1.35425 0.30256,-2.86638 -0.52325,-4.04959c-0.82581,-1.18321 -2.17778,-1.88811 -3.62067,-1.88777zM74.1333,194.66016c-6.98289,0 -12.64364,-5.66075 -12.64364,-12.64364c0,-6.98289 5.66075,-12.64364 12.64364,-12.64364c6.98289,0 12.64364,5.66075 12.64364,12.64364c-0.00803,6.97956 -5.66408,12.63561 -12.64364,12.64364zM176.57751,182.01652c0,6.98289 -5.66075,12.64364 -12.64364,12.64364c-6.98289,0 -12.64364,-5.66075 -12.64364,-12.64364c0,-6.98289 5.66075,-12.64364 12.64364,-12.64364c6.97956,0.00803 12.63561,5.66408 12.64364,12.64364zM178.3758,118.80714c-1.92609,5.2031 -6.88186,8.6621 -12.43,8.67584h-96.32632l-8.93671,-52.00251h133.60926z"></path></g></g></svg>
+                        <span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>GIỎ HÀNG CỦA BẠN</h1>
+    </div>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">Sản phẩm</h5>
+            <h5 class="price">Giá</h5>
+            <h5 class="quantity">Số lượng</h5>
+            <h5 class="total">Tổng cộng</h5>
+        </div>
+        <div class="products"></div>
+        <a type="button" class="confirm-btn">Xác nhận</a>
+        <div class="modal">
+            <div class="modal-content">
+                <ion-icon class="close" name="close-outline"></ion-icon>
+                <h1>THÔNG TIN NHẬN HÀNG</h1>
+                <div class="detail">
+                    <div class="    input-txt">
+                        <label>Họ và tên </label>
+                        <input type="text" required><br>
+                    </div>
+                    <div class="input-txt">
+                        <label>SĐT </label>
+                        <input type="text" required><br>
+                    </div>
+                    <div class="input-txt">
+                        <label>Email </label>
+                        <input type="email" required><br>
+                    </div>
+                    <div class="input-txt">
+                        <label>Địa chỉ </label>
+                        <input type="text" required><br> 
+                    </div>
+                </div>
+                <a class="confirm-order">Xác nhận</a>
+            </div>
+        </div>
+        <div class="confirm-modal">
+            <div class="content-confirm">
+                <ion-icon class="close" name="close-outline"></ion-icon>
+                <h1>Đặt hàng thành công</h1>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.confirm-btn').click(function () {
+            $('.modal').show();
+        });
+        $('.close').click(function () {
+            $('.modal').hide();
+            $('.confirm-modal').hide();
+        });
+        $('.confirm-order').click(function () {
+            $('.modal').hide();
+            $('.confirm-modal').show();
+        });
+        $(window).on('click', function (e) {
+            if ($(e.target).is('.modal')) {
+                $('.modal').hide();
+            }
+            if ($(e.target).is('.confirm-modal'))
+                $('.confirm-modal').hide();
+            });
+    });
+    </script>
+</body>
+</html>

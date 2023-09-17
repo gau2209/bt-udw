@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 01</title>
+</head>
+<body>
+    <script>
+        function Tinhtuoi()
+        {
+            var ten = document.getElementById("txtTen").value;
+            var namsinh = parseInt(document.getElementById("txtNamsinh").value);
+            // kiểm tra giá trị nhập
+            if (ten =="")
+            {
+                alert("Tên rỗng");
+                return false;
+            } 
+            if(isNaN(namsinh))
+            {
+                alert("Năm sinh không hợp lệ");
+                return false;
+            }
+            var namhientai = new Date().getFullYear();
+            document.getElementById("kq").innerHTML="Chào bạn " + ten +"<br> Tuổi bạn là " + (namhientai - namsinh);
+        }
+    </script>
+  <p>
+      <label for="txtTen">Nhập tên:</label>
+      <input type="text" id="txtTen" placeholder="Nhập tên">
+  </p>
+  <p>
+    <label for="txtNamsinh">Nhập năm sinh:</label>
+    <input type="text" id="txtNamsinh" placeholder="Nhập năm sinh">
+</p>
+<p>
+    <button id="btTinhtuoi" onclick="Tinhtuoi">Tính tuổi</button>
+</p>
+<p id="kq"></p>
+
+</body>
+</html>

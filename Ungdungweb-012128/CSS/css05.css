@@ -1,0 +1,8 @@
+@charset "utf-8";
+table { border: 3px solid black ;}
+
+tr[class="1"]{background-color: darkgrey;color: lightyellow;text-align: center;}
+
+tr[class="2"]{background-color: lightgrey;text-align: left;}
+
+tr[class="3"]{background-color: rgb(159, 161, 156);text-align: left;}

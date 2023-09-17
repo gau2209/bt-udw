@@ -1,0 +1,90 @@
+@charset "utf-8";
+*{margin: 3px;padding: 0px;}
+.main
+{
+    flex-direction: column;
+    display: flex;
+    background-color: lightcoral;
+}
+.banner
+{
+    text-align: center;
+    height: 80px;
+    background-color: blue;
+    color: yellow;
+    font-size: 30px;
+    line-height: 80px;
+}
+.nav
+{
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    background-color: lightgreen;
+}
+li[class="1"]
+{
+    padding-left: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+.container
+{
+    min-height: 400px;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: row;
+}
+.footer
+{
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    background-color: blue;
+    color: yellow;
+}
+.left
+{
+    line-height: 200%;
+    padding: 20px;
+    width: 15%;
+    background-color: lightpink;
+}
+.right
+{
+    width: 15%;
+    background-color: lightpink;
+}
+.content
+{
+    font-size: 30px;
+    width: 70%;
+    background-color: lightslategray;
+}
+.content > div
+{
+    display: flex;
+    flex-direction: row;
+}
+.content div div
+{
+    font-size: 23px;
+    width: 50%;
+    height: 180px;
+    background-color: mediumaquamarine;
+    border: 3px brown solid;
+}
+.right div
+{
+    text-align: center;
+    background-color: coral;
+    border-radius: 25px;
+    height: 180px;
+    width: 170px;
+    margin: 10px;
+    line-height: 180px;
+}
+div[class="2"]
+{
+    overflow:scroll ;
+}

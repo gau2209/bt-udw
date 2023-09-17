@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 12</title>
+</head>
+<body bgcolor="pink">
+    <h2><b>Điền Thông Tin Đăng Ký</b></h2>
+    <form action="Javascript:alert('Bạn đã điền thông tin thành công')" method="POST">
+
+            <table border ="2" bgcolor="#00FFFF" width="50%">
+                <tbody>
+                    <tr> 
+                        <th > Họ Tên: </th> 
+                     <th align="left"> <input type="text" name="username"> </th> 
+                    </tr>
+                    <tr>
+                        <th>  Giới tính </th>
+                        <th align="left"> <input type="radio" name="sex" value="Nam" checked>Nam 
+                             <input type="radio" name="sex" value="Nữ"> Nữ 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th> Ngày sinh</th>
+                        <th align="left"> <input type="date"> </th>
+                    </tr>
+                    <tr>
+                        <th> Điều bạn quan tâm </th>
+                        <th align="left">
+                             <input type="checkbox"> <label> Kinh tế </label> 
+                             <input type="checkbox"> <label> Xã Hội </label>
+                             <input type="checkbox"> <label> Giải trí </label>  
+                         </th>
+                    </tr>
+                    <tr>
+                        <th>Địa chỉ</th>
+                        <th align="left"><textarea rows="5" cols="50"></textarea></th>
+                    </tr>
+                    <tr>
+                        <th>Học vấn</th>
+                        <th align="left">
+                            <input type="text" list="favorite">
+                            <datalist id="favorite">
+                                <option> Cao đẳng</option>
+                                <option>Trung cấp</p></option>
+                                <option>Trung học</option>
+                                <option>Tiểu học</option>
+                            </datalist> 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="submit" value="Gửi thông tin">
+                            <input type="reset" value="Nhập lại">
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+    </form>
+    <p><a href="web.html">Quay về mục lục HTML</a></p>
+</body>
+</html>
